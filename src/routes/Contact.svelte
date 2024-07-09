@@ -71,6 +71,7 @@
 		<h1>تواصل معنا</h1>
 	</div>
 	<div class="flex flex-row gap-3">
+		<span class="fa-solid fa-envelope text-2xl"></span>
 		{#if email_copied}
 			<p>contact@mosajla.com.sa</p>
 			<button class="box-border rounded-full bg-black text-orange-200">copied</button>
@@ -83,6 +84,7 @@
 	</div>
 	<div class="flex flex-row gap-3">
 
+		<span class="fa-solid fa-phone text-2xl"></span>
 			<p>0503888898</p>
 		{#if bandar_phone_copied}
 			<button class="box-border rounded-full bg-black text-orange-200">copied</button>
@@ -94,6 +96,7 @@
         </div>
 	<div class="flex flex-row gap-3">
 
+		<span class="fa-solid fa-phone text-2xl"></span>
 			<p>0552449772</p>
 		{#if abdullah_phone_copied}
 			<button class="box-border rounded-full bg-black text-orange-200">copied</button>
