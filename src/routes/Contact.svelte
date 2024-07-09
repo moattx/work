@@ -1,6 +1,7 @@
 <script>
 	let email_copied = false;
-	let phone_copied = false;
+	let bandar_phone_copied = false;
+	let abdullah_phone_copied = false;
 
 	function fallback(text) {
 		var textArea = document.createElement('textarea');
@@ -36,14 +37,23 @@
 		});
 		email_copied = false;
 	};
-	const phoneClicked = async () => {
-		phone_copied = true;
-		copy('553741645');
+	const bandar_phoneClicked = async () => {
+		bandar_phone_copied = true;
+		copy('0503888898');
 
 		await new Promise((resolve, reject) => {
 			setTimeout(resolve, 1.5 * 1000);
 		});
-		phone_copied = false;
+		bandar_phone_copied = false;
+	};
+	const abdullah_phoneClicked = async () => {
+		abdullah_phone_copied = true;
+		copy('0552449772');
+
+		await new Promise((resolve, reject) => {
+			setTimeout(resolve, 1.5 * 1000);
+		});
+		abdullah_phone_copied = false;
 	};
 	/*
         copied = true;
@@ -73,11 +83,22 @@
 	</div>
 	<div class="flex flex-row gap-3">
 
-			<p>553741645</p>
-		{#if phone_copied}
+			<p>0503888898</p>
+		{#if bandar_phone_copied}
 			<button class="box-border rounded-full bg-black text-orange-200">copied</button>
 		{:else}
-			<button class="box-border rounded-full bg-black text-orange-200" on:click={phoneClicked}>
+			<button class="box-border rounded-full bg-black text-orange-200" on:click={bandar_phoneClicked}>
+                copy
+            </button>
+		{/if}
+        </div>
+	<div class="flex flex-row gap-3">
+
+			<p>0552449772</p>
+		{#if abdullah_phone_copied}
+			<button class="box-border rounded-full bg-black text-orange-200">copied</button>
+		{:else}
+			<button class="box-border rounded-full bg-black text-orange-200" on:click={abdullah_phoneClicked}>
                 copy
             </button>
 		{/if}

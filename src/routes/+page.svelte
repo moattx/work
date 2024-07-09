@@ -20,7 +20,7 @@
 <Footer />
 
 {#if mobile}
-<a class="wp-call-button" href="tel:+966561098877"></a>
+<a class="wp-call-button" href="tel:+0503888898"></a>
 {/if}
 
 <style>
