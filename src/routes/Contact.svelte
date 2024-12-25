@@ -1,7 +1,9 @@
 <script>
 	let email_copied = false;
 	let bandar_phone_copied = false;
+  /*
 	let abdullah_phone_copied = false;
+  */
 
 	function fallback(text) {
 		var textArea = document.createElement('textarea');
@@ -46,6 +48,7 @@
 		});
 		bandar_phone_copied = false;
 	};
+/*
 	const abdullah_phoneClicked = async () => {
 		abdullah_phone_copied = true;
 		copy('0552449772');
@@ -55,6 +58,7 @@
 		});
 		abdullah_phone_copied = false;
 	};
+  */
 	/*
         copied = true;
             console.log("hi")
@@ -72,6 +76,7 @@
 	</div>
 	<div class="flex flex-row gap-3">
 		<span class="fa-solid fa-envelope text-2xl"></span>
+    <box-icon type='solid' name='envelope'></box-icon>
 		{#if email_copied}
 			<p>contact@mosajla.com.sa</p>
 			<button class="box-border rounded-full bg-black text-orange-200">copied</button>
@@ -83,8 +88,7 @@
 		{/if}
 	</div>
 	<div class="flex flex-row gap-3">
-
-		<span class="fa-solid fa-phone text-2xl"></span>
+<box-icon type='solid' name='phone'></box-icon>
 			<p>0503888898</p>
 		{#if bandar_phone_copied}
 			<button class="box-border rounded-full bg-black text-orange-200">copied</button>
@@ -93,17 +97,10 @@
                 copy
             </button>
 		{/if}
+    <!--
+    <a><i class="fa fa-camera-retro"></i> </a>
+    <span class="material-symbols-outlined"></span>
+    -->
         </div>
-	<div class="flex flex-row gap-3">
 
-		<span class="fa-solid fa-phone text-2xl"></span>
-			<p>0552449772</p>
-		{#if abdullah_phone_copied}
-			<button class="box-border rounded-full bg-black text-orange-200">copied</button>
-		{:else}
-			<button class="box-border rounded-full bg-black text-orange-200" on:click={abdullah_phoneClicked}>
-                copy
-            </button>
-		{/if}
-        </div>
 </section>
