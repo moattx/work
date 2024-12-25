@@ -5,7 +5,7 @@
   import Footer from "./Footer.svelte";
   let mobile = false;
   console.log(navigator.userAgent)
-  if (navigator.userAgent.includes("iPhone")){
+  if (navigator.userAgent.match(/Android|webOS|iPhone|iPod|Blackberry/i)){
     mobile = true;
   }
 

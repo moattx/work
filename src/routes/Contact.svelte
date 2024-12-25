@@ -75,7 +75,6 @@
 		<h1>تواصل معنا</h1>
 	</div>
 	<div class="flex flex-row gap-3">
-		<span class="fa-solid fa-envelope text-2xl"></span>
     <box-icon type='solid' name='envelope'></box-icon>
 		{#if email_copied}
 			<p>contact@mosajla.com.sa</p>
@@ -97,10 +96,6 @@
                 copy
             </button>
 		{/if}
-    <!--
-    <a><i class="fa fa-camera-retro"></i> </a>
-    <span class="material-symbols-outlined"></span>
-    -->
         </div>
 
 </section>
